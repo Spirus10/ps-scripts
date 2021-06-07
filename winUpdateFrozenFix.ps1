@@ -1,0 +1,1 @@
+net stop wuauserv; net stop bits; net stop cryptsvc; ren %systemroot%\System32\Catroot2 Catroot2.old; ren %systemroot%\SoftwareDistribution SoftwareDistribution.old; net start wuauserv; net start bits; net start cryptsvc
